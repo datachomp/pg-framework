@@ -27,9 +27,9 @@ sudo ufw allow 5432  #pg
 sudo ufw allow 6379
 sudo ufw allow 11212 #memcached
 
-sudo ln -nfs "configs/pg_hba.conf /etc/postgresql/9.3/main/pg_hba.conf"
-sudo ln -nfs "configs/postgresql.conf /etc/postgresql/9.3/main/postgresql.conf"
-sudo ln -nfs "configs/redis.conf /etc/redis/redis.conf"
+sudo ln -nfs configs/pg_hba.conf /etc/postgresql/9.3/main/pg_hba.conf
+sudo ln -nfs configs/postgresql.conf /etc/postgresql/9.3/main/postgresql.conf
+sudo ln -nfs configs/redis.conf /etc/redis/redis.conf
 
 echo "horray!"
 exit 0
